@@ -1,0 +1,447 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+.container05
+{
+	width: 100%;
+	height: auto;
+	background: linear-gradient(to bottom right, #AAE2FD, pink);
+}
+
+
+.header
+{
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to bottom right, #AAE2FD, pink);
+	border: 1px solid pink;
+}
+
+
+.logo
+{
+	width: 30%;
+	height: 100px;
+	background-color: #ABE1FB;
+	float: left;
+	padding: 8px;
+	box-sizing: border-box;
+	
+}
+.menu
+{
+	width: 70%;
+	height: 100px;
+	
+	background-color: #ABE1FB;
+	float: right;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.gallery {
+  display: flex;
+  width: 100%;
+	height:100vh;
+  padding: 4% 2%;
+	box-sizing: border-box;
+	 
+}
+	
+
+
+	
+  
+ 
+
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+
+
+
+.box:hover {
+  flex: 1 1 50%;
+}
+
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider09
+{
+	width: 100%;
+	height: 600px;
+	background-image: url("../images/ss.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	
+}
+
+.slider09_right
+{
+	width: 50%;
+	height: 60px;
+	float: right; 
+	box-sizing: border-box;
+}
+.slider09_right button
+{
+	width: 190px;
+	height: 60px;
+	border-radius: 50px;
+	background-color: transparent;
+	color: white;
+	font-size: 14pt;
+	border: 2px #277EA0 solid;
+	padding: 20px;
+}
+
+.slider09_right button:hover
+{
+	background-color: azure;
+	color: #277EA0;
+	font-size: 14pt;
+	border: 2px #FFFFFF solid;
+	
+}
+
+.menu ul 
+{
+	list-style: none;
+}
+
+.menu ul li
+{
+	float: left;
+	padding: 15px 40px;;
+}
+.menu ul li a
+{
+	text-decoration: none;
+	color: #213448;
+}
+
+.menu ul li:hover
+{
+	background-color: white;
+}
+
+.icon
+{
+	width: 5%;
+	height: 50px;
+	background-color: #ABE1FB;
+	float: right;
+}
+
+
+
+/*menu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover
+{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+.beauty
+{
+	width: 100%;
+	height: 550px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	background-size: cover;
+}
+
+.beauty_left
+{
+	width: 25%;
+	height: 500px;
+	float: left;
+	margin: 0 1%;
+}
+
+
+.beauty_nd
+{
+	width: 100%;
+	height: 235px;
+	color: black;
+	margin: 40px 40px 0 40px;
+	padding: 15px 15px 0;
+	box-sizing: border-box;
+	
+}
+
+
+
+.skin
+{
+	width: 100%;
+	height: 600px;
+	background-image: url("../images/me.jpg");
+	box-sizing: border-box;
+	background-size: cover;
+	margin: 10px 0px;
+}
+
+
+.skin_left
+{
+	width: 50%;
+	height: 600px;
+	padding-left: 150px;
+	float: left; 
+
+	
+}
+
+.skin_left button
+{
+	width: 190px;
+	height: 60px;
+	border-radius: 50px;
+	background-color: transparent;
+	color: white;
+	font-size: 14pt;
+	border: 2px #277EA0 solid;
+	padding: 20px;
+}
+
+.skin_left button:hover
+{
+	background-color: white;
+	color: #277EA0;
+	font-size: 14pt;
+	border: 2px #FFFFFF solid;
+	
+}
+
+
+
+
+.album {
+  height: 600px;
+  width: 100%;
+  display: flex;
+flex-wrap: nowrap;
+	justify-content: center;
+}
+.pic {
+  height: 600px;
+  width: 30%;
+  border-radius: 10px;
+	margin: 0px 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+ 
+ 
+}
+.card1 {
+  background: url("../images/be.jpg") center center no-repeat;
+  background-size: 600px;
+}
+.card1:hover {
+  background: url("../images/de.jpg") left center no-repeat;
+  background-size: 700px;
+}
+.card1:hover h2 {
+  opacity: 1;
+}
+
+.card2 {
+  background: url("../images/gt.jpg")center center no-repeat;
+  background-size: 600px;
+}
+.card2:hover {
+  background: url("../images/haba.png") center no-repeat;
+  background-size: 700px;
+}
+.card2:hover h2 {
+  opacity: 1;
+}
+.card3 {
+  background: url("../images/22.jpg")center center no-repeat;
+  background-size: 600px;
+}
+.card3:hover {
+  background: url("../images/gg.jpg")  center no-repeat;
+  background-size: 700px;
+}
+.card3:hover h2 {
+  opacity: 1;
+}
+h2 {
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+
+
+
+.slider02
+{
+	width: 100%;
+	height: 600px;
+	box-sizing: border-box;
+	background-size: cover;
+}
+
+	/***** Footer *****/
+
+
+
+
+.footer{
+    width: 100%;
+    height:260px;
+    background:linear-gradient(to bottom right, pink, #AAE2FD);
+	justify-content: center;
+	padding-top: 35px;
+}
+.footer span
+{
+	
+	font-weight: bolder;
+	font-size: 25px;
+	text-align: center;
+}
+.contact {
+	width: 100%;
+	height: 200px;
+	padding: 20px 550px;
+	
+	
+}
+
+.contact ul {
+  position:absolute;
+  justify-content: center;
+  
+  display:flex;
+	
+}
+
+.contact ul li {
+  list-style: none;
+}
+
+.contact ul li a {
+  position: relative;
+  width:60px;
+  height:60px;
+  display:block;
+  text-align:center;
+  margin:0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
+}
+
+.contact ul li a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+
+.contact ul li a .fa {
+  widht: 100%;
+ 
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:30px;
+  color: #262626;
+  transition: .5s;
+}
+
+.contact ul li:nth-child(1) a:hover .fa {
+  color: #3b5998;
+}
+
+.contact ul li:nth-child(2) a:hover .fa {
+  color: #00aced;
+}
+
+.contact ul li:nth-child(3) a:hover .fa {
+  color: #dd4b39;
+}
+
+.contact ul li:nth-child(4) a:hover .fa {
+  color: #007bb6;
+}
+
+.contact ul li:nth-child(5) a:hover .fa {
+  color: #e4405f;
+}
+
+
